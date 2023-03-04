@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6721054883964994434}
   - component: {fileID: 6721054883964994435}
   - component: {fileID: 6721054883964994436}
+  - component: {fileID: 4149406305484555487}
   m_Layer: 0
   m_Name: Trash
   m_TagString: Untagged
@@ -147,3 +148,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startForce: {x: 5, y: 0}
+--- !u!114 &4149406305484555487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6721054883964994437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2600931c1cba3254a9d346022aef1455, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
