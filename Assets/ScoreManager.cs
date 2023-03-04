@@ -1,9 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
-public class TrashRemoval : MonoBehaviour
+public class ScoreManager : MonoBehaviour
 {
+    public static int SCORE;
+
+    public TextMeshProUGUI scoreText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,12 +18,6 @@ public class TrashRemoval : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    void OnMouseDown() 
-    {
-        Destroy(gameObject);
-        ScoreManager.SCORE++;
+        scoreText.text = "Score:" + SCORE;
     }
 }
