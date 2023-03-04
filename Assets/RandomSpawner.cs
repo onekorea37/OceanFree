@@ -29,25 +29,9 @@ public class RandomSpawner : MonoBehaviour
             yield return new WaitForSeconds(Random.Range(minSpawnInterval, maxSpwanInterval));
         }
     }
-    /*
-    // Start is called before the first frame update
-    void Start()
+
+    void Update()
     {
         
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        SpawnObject();
-    }
-
-    void SpawnObject() {
-        Vector2 randomPosition = new Vector2(
-            Random.Range(minX, maxX),
-            Random.Range(minY, maxY)
-        ); 
-
-        Instantiate(spherePrefab, randomPosition, Quaternion.identity);
-    }*/
 }
