@@ -9,11 +9,13 @@ public class ScoreManager : MonoBehaviour
 
     public TextMeshProUGUI scoreText;
 
-    public GameObject msg1, msg2, msg3, msg4, msg5;
+    public GameObject title, msg1, msg2, msg3, msg4, msg5;
 
     // Start is called before the first frame update
     void Start()
     {
+        StartCoroutine(WaitForSec(title));
+
         msg1.SetActive(false);
         msg2.SetActive(false);
         msg3.SetActive(false);
@@ -24,7 +26,7 @@ public class ScoreManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        scoreText.text = "Score: " + SCORE;
+        scoreText.text = "SCORE: " + SCORE;
 
         if (SCORE == 10) {
             msg1.SetActive(true);
